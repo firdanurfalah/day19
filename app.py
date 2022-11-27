@@ -62,7 +62,7 @@ df = df[:1] # Selects only the first row (the user input data)
 
 st.write(input_df)
 # Reads in saved classification model
-load_clf = pickle.load(open('day19/Random_forest_model.pkl', 'rb'))
+load_clf = pickle.load(open('DAY19/Random_forest_model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
